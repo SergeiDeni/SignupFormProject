@@ -17,18 +17,22 @@
           <!--<label for="inputEmail">Email</label>-->
 
           <input class="noborder"
+                 (keyup)="onKeyUp1(input1.value)"
                  type="text"
-                 id="inputEmail"
+                 #input1
                  placeholder="Email">
 
         </div>
+        <!--<p>{{inputText2}}</p>-->
+
         <!--- Password Block --->
         <div class="wrap-input100" >
 
           <!--<label for="inputPassword">Password</label>-->
           <input class="noborder"
+                 (keyup)="onKeyUp2(input2.value)"
                  type="password"
-                 id="inputPassword"
+                 #input2
                  placeholder="Password">
         </div>
 
@@ -36,7 +40,7 @@
         <!--- Buttons Block --->
         <div class="wrap-btn-btn-primary">
             <div class="bgbtn-btn-primary"></div>
-           <button type="submit" class="btn-btn-primary">Submit</button>
+           <button (click)="save()" type="submit" class="btn-btn-primary">Submit</button>
         </div>
       </fieldset>
     </form>
