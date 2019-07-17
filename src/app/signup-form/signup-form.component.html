@@ -18,14 +18,15 @@
 
           <input class="noborder"
                  name="InputMail"
-                 [(ngModel)]="InputMail"
-                 (keyup)="onKeyUp1(input1.value)"
+                 [(ngModel)]="inputText1"
+
                  type="text"
-                 #input1
-                 placeholder="Email">
+
+                 placeholder="Email"
+          >
 
         </div>
-        <!--<p>{{inputText2}}</p>-->
+        <p>{{inputText2}}</p>
 
         <!--- Password Block --->
         <div class="wrap-input100" >
@@ -33,10 +34,10 @@
           <!--<label for="inputPassword">Password</label>-->
           <input class="noborder"
                  name="InputPass"
-                 [(ngModel)]="InputPass"
-                 (keyup)="onKeyUp2(input2.value)"
-                 type="password"
-                 #input2
+                 [(ngModel)]="inputText2"
+
+                 type="text"
+
                  placeholder="Password">
         </div>
 
@@ -44,7 +45,7 @@
         <!--- Buttons Block --->
         <div class="wrap-btn-btn-primary">
             <div class="bgbtn-btn-primary"></div>
-           <button (click)="save(InputMail, InputPass)"  type="submit" class="btn-btn-primary">Submit</button>
+           <button (click)="save()"  type="submit" class="btn-btn-primary">Submit</button>
         </div>
       </fieldset>
     </form>
