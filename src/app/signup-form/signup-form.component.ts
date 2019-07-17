@@ -9,15 +9,19 @@ export class SignupFormComponent implements OnInit {
 
   inputText1 = '';
   inputText2 = '';
+  // Input = '';
+  // InputPass ='';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  save() {
+  save(Input, InputPass) {
     console.log(this.inputText1);
-    console.log(this.inputText2)
+    console.log(this.inputText2);
+    console.log(Input);
+    console.log(InputPass);
 
   }
 
