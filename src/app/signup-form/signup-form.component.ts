@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupFormComponent implements OnInit {
 
-  inputText1 = '';
-  inputText2 = '';
-  // Input = '';
-  // InputPass ='';
+  inputMail = '';
+  inputPassword = '';
 
   constructor() { }
 
@@ -18,22 +16,9 @@ export class SignupFormComponent implements OnInit {
   }
 
   save() {
-    // console.log(this.inputText1);
-    // console.log(this.inputText2);
-    console.log(this.inputText1);
-    console.log(this.inputText2);
-    // console.log(InputPass);
+    console.log(this.inputMail);
+    console.log(this.inputPassword);
+   }
 
-  }
-
-  // onKeyUp1 (value){
-  //   // console.log(event)
-  //   this.inputText1=value;
-  // }
-
-  // onKeyUp2 (value){
-  //   // console.log(event)
-  //   this.inputText2=value;
-  // }
 }
 
